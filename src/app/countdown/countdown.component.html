@@ -1,5 +1,5 @@
 <div class="match" *ngIf="match">
-   <span class="result" *ngIf="match.home_result || match.home_result === 0">({{match.home_result}}) </span><span class="team home">{{match.home_team | teamPipe}}</span><span class="spacer"> - </span><span class="team away">{{match.away_team | teamPipe}}</span><span class="result" *ngIf="match.away_result || match.away_result === 0"> ({{match.away_result}})</span>
+   <span class="result">({{match.home_result || 0}}) </span><span class="team home">{{match.home_team | teamPipe}}</span><span class="spacer"> - </span><span class="team away">{{match.away_team | teamPipe}}</span><span class="result"> ({{match.away_result || 0}})</span>
 </div>
 <div class="countdown" [class.playingNow]="live" *ngIf="match && (countdown || live)">
   <!-- [style.background-image]="'url(' + tvIcon + ')'" -->
