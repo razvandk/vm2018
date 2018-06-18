@@ -1,0 +1,8 @@
+{
+  "/master/*": {
+    "target": "https://raw.githubusercontent.com/lsv/fifa-worldcup-2018/",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}

@@ -1,0 +1,74 @@
+:host {
+  background: rgba(0, 0, 0, .5);
+  color: white;
+  float: left;
+  width: 23vw;
+  padding: .4rem;
+  position: fixed;
+  left: 2%;
+  top: 50%;
+  margin-top: -5rem;
+
+  &.denmark {
+    left: auto;
+    right: 3.5%;
+    width: 20vw;
+  }
+
+  .match{
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: center;
+    .result{
+      letter-spacing: -.1rem;
+      color: rgba(white, .4);
+    }
+    .spacer{
+      letter-spacing: -.2rem;
+    }
+  }
+
+  .live {
+    position: absolute;
+    font-size: 4rem;
+    text-align: center;
+    width: 100%;
+    display: none;
+    line-height: 7.2rem;
+  }
+
+  .unit {
+    float: left;
+    width: 25%;
+    position: relative;
+
+    >.number,
+    >.text {
+      display: block;
+      text-align: center;
+      width: 100%;
+      text-transform: uppercase;
+    }
+
+    >.number {
+      font-size: 4rem;
+      font-weight: bold;
+      line-height: 4.6rem;
+    }
+
+    >.text {
+      font-size: 2rem;
+      line-height: 2.6rem;
+    }
+  }
+
+  .playingNow {
+    .live {
+      display: block;
+    }
+    .unit {
+      visibility: hidden;
+    }
+  }
+}
