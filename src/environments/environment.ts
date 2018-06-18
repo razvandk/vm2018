@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   api: '/master/',
-  REFRESH_RATE: 5
+  REFRESH_RATE: 2
 };
 
 /*
