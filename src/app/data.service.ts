@@ -53,7 +53,7 @@ export class DataService {
         data[key].matches.forEach(match => {
           const diff = this.dateDiff(new Date(match.date));
           if (!match.finished) {
-            if (match.home_team === 11 || match.away_team === 11) {
+            if (match.home_team === 12 || match.away_team === 12) {
               if (!nextDkMatchDate || nextDkMatchDate > diff) {
                 nextDkMatchDate = diff;
                 nextDkMatch = match;

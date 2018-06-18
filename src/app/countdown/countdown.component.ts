@@ -58,9 +58,10 @@ export class CountdownComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.subscription = ((this.dk) ? this.DATA.dkNext : this.DATA.next)
       .subscribe(match => {
-        if (!this.match || match.name !== this.match.name) {
+        if (!this.match || match.name !== this.match.name ||
+          (match.name === this.match.name && (match.home_result !== this.match.home_result || match.away_result !== this.match.away_result))
+        ) {
           this.match = match;
-          // this.findTvIcon(match.channels);
           this.reset();
         }
       });
